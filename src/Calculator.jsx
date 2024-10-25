@@ -32,7 +32,7 @@ const Calculator = () => {
 
   return (
     <div className="bg-gray-100 border border-gray-300 w-fit mx-auto mt-20 p-5 rounded-lg shadow-lg">
-      <div className="bg-gray-200 border h-14 mb-5 text-right p-3 rounded text-xl font-semibold">
+      <div className="bg-gray-200 border h-16 mb-5 text-right p-4 rounded text-2xl font-semibold">
         {value}
       </div>
       <div className="grid grid-cols-4 gap-4">
@@ -55,10 +55,11 @@ const Calculator = () => {
         <button className="btn" onClick={handleValue}>1</button>
         <button className="btn" onClick={handleValue}>2</button>
         <button className="btn" onClick={handleValue}>3</button>
+        <button className="btn" onClick={handleValue}>+</button>
 
-        <button className="btn col-span-2" onClick={handleValue}>0</button>
+        <button className="btn col-span-1" onClick={handleValue}>0</button>
         <button className="btn" onClick={handleValue}>.</button>
-        <button className="btn bg-blue-500 text-white" onClick={calculate}>=</button>
+        <button className="btn bg-blue-600 text-white hover:bg-blue-700" onClick={calculate}>=</button>
       </div>
     </div>
   )
